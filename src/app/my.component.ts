@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
  
 @Component({
-  selector: 'hello-world-ngif',
-  templateUrl: './hello-world-ngif.component.html'
+  selector: 'my',
+  templateUrl: './my.component.html'
 })
 export class HelloWorldNgIfComponent {
   message = 'I\'m read only!';
