@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
  
-@Component ({
-  selector: 'my',
-  templateUrl: './my.component.html'
+@Component({
+  selector: 'hello-world-ngif',
+  templateUrl: './hello-world-ngif.component.html'
 })
-export class My {
-  fontColor = 'blue';
-  sayHelloId = 1;
-  canClick = false;
-  message = 'Hello, World';
+export class HelloWorldNgIfComponent {
+  message = 'I\'m read only!';
+  canEdit = false;
  
-  sayMessage() {
-    alert(this.message);
+  onEditClick() {
+    this.canEdit = !this.canEdit;
+    if (this.canEdit) {
+      this.message = 'You can edit me!';
+    } else {
+      this.message = 'I\'m read only!';
+    }
   }
- 
 }
